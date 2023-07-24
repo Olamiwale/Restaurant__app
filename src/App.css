@@ -1,0 +1,13 @@
+.section__padding {
+    padding: 4rem 6rem;
+  }
+  
+  .flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+body {
+  background-color: black;
+}
+

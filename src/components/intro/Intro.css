@@ -1,0 +1,26 @@
+.app__video {
+  margin: 4rem;
+    height: 100%;
+    position: relative;
+    display: flex;
+   justify-content: center;
+}
+
+.app__video video {
+    width: 70%;
+    height: 60%;
+}
+
+.app__video-overlay {
+   position: absolute;
+   inset: 0;
+   display: flex;
+}
+
+.app__video-overlay_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-golden);
+    cursor: pointer; 
+}

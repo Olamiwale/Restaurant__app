@@ -1,0 +1,92 @@
+.app__about {
+  color: var(--color-golden);
+  padding: 4rem;
+}
+.app__about-img img {
+  width: 300px;
+}
+.app__about-content_knife img {
+  height: 700px;
+}
+.app__about-content-history {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+.app__about-content-about {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+.app__about-content_knife {
+  margin: 2rem 4rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+button {
+  width: 130px;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.app__about-img {
+  position: absolute;
+  inset: 0;
+}
+.app__about {
+ position: relative;
+ z-index: 2;
+}
+.app__about-content {
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .app__about-content {
+        flex-direction: column;
+    }
+    .app__about-content-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+      }
+
+      .app__about-content-history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+      }
+      .app__about-content-about {
+        text-align: center;
+      }
+      .app__about-content-history {
+        text-align: center;
+      }
+      .app__about-content_knife img {
+       height: 500px;
+      }
+      .app__about-img img {
+        width: 250px;
+      }
+}
+
+
+
+

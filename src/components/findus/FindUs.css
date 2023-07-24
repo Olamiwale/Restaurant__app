@@ -1,0 +1,91 @@
+.app__gallery {
+  flex-direction: row;
+  padding: 4rem;
+}
+.app__gallery-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 500px;
+  padding-right: 2rem;
+}
+
+.app__gallery-content button {
+  margin-top: 1rem;
+}
+.app__gallery-images {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  position: relative;
+ 
+}
+.app__gallery-images_container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.image {
+  margin: 5px;
+  height: 600px;
+  width: 500px;
+}
+.app__gallery-images_container::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(140, 151, 140);
+  border-radius: 50%;
+}
+
+.app__gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  align-self: center;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+.app__gallery-images_arrows p {
+  text-align: center;
+ padding: 5px;
+ font-size: 20px;
+}
+
+
+.app__gallery-images_arrows div:hover {
+ background-color: rgb(164, 63, 63);
+}
+
+.app__gallery-images_card:hover img {
+    opacity: .8;
+}
+
+@media (max-width: 900px) {
+  .app__gallery {
+    flex-direction: column;
+  }
+  .app__gallery-content {
+    display: flex;
+   align-items: center;
+  }
+
+  .image {
+    margin: 5px;
+    height: 500px;
+    width: 400px;
+  }
+}
